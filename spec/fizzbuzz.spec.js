@@ -23,7 +23,7 @@ describe('fizzbuzz', function () {
      * when the function argument is evenly divisible by five.
      */
     it('should return "buzz" when arg is divisible by five', function () {
-        expect(fizzbuzz(3)).toEqual('buzz');
+        expect(fizzbuzz(5)).toEqual('buzz');
     });
 
     /**
