@@ -44,7 +44,6 @@ describe('fizzbuzz', function ()
      */
     it('should return "MeaningOfLife" when the function argument is equal to 42', function ()
     {
-        // You're on your own here. Replace "pending();" with your own code
         expect(fizzbuzz(42)).toEqual('MeaningOfLife');
     });
 });

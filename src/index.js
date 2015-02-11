@@ -9,11 +9,11 @@ $(document).ready( function()
     {
     	if (fizzbuzz(i) === undefined)
 		{
-		document.write(i + "<br>");
+            document.write(i + "<br>");
 		}
 		else
 		{
-    	document.write(fizzbuzz(i) + "<br>");
+            document.write(fizzbuzz(i) + "<br>");
     	}
     }
 });
