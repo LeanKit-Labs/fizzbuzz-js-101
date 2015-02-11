@@ -8,13 +8,15 @@
  *   4. Refactor as necessary.
  */
 
-describe('fizzbuzz', function () {
+describe('fizzbuzz', function () 
+{
 
     /**
      * Specification #1: The function should return the string "fizz"
      * when the function argument is evenly divisible by three.
      */
-    it('should return "fizz" when the function argument is divisible by three', function () {
+    it('should return "fizz" when the function argument is divisible by three', function () 
+    {
         expect(fizzbuzz(3)).toEqual('fizz');
     });
 
@@ -22,7 +24,8 @@ describe('fizzbuzz', function () {
      * Specification #2: The function should return the string "buzz"
      * when the function argument is evenly divisible by five.
      */
-    it('should return "buzz" when the function argument is divisible by five', function () {
+    it('should return "buzz" when the function argument is divisible by five', function () 
+    {
         expect(fizzbuzz(5)).toEqual('buzz');
     });
 
@@ -30,17 +33,18 @@ describe('fizzbuzz', function () {
      * Specification #3: The function should return the string "fizzbuzz"
      * when the function argument is evenly divisible by both three *and* five.
      */
-    it('should return "fizzbuzz" when the function argument is divisible by both three and five', function () {
-        // You're on your own here. Replace "pending();" with your own code
-        pending();
+    it('should return "fizzbuzz" when the function argument is divisible by both three and five', function () 
+    {
+        expect(fizzbuzz(15)).toEqual('fizzbuzz');
     });
 
     /**
      * Specification #4: The function should return the string "MeaningOfLife"
      * when the function argument is equal to the number 42.
      */
-    it('should return "MeaningOfLife" when the function argument is equal to 42', function () {
+    it('should return "MeaningOfLife" when the function argument is equal to 42', function ()
+    {
         // You're on your own here. Replace "pending();" with your own code
-        pending();
+        expect(fizzbuzz(42)).toEqual('MeaningOfLife');
     });
 });
