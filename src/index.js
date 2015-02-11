@@ -3,6 +3,17 @@
  * Add your code here to implement features and functionality.
  */
 
-$(document).ready( function() {
-    // All ur codez are belong to here...
+$(document).ready( function() 
+{
+    for ( var i = 1 ; i <= 100 ; i++ )
+    {
+    	if (fizzbuzz(i) === undefined)
+		{
+            document.write(i + "<br>");
+		}
+		else
+		{
+            document.write(fizzbuzz(i) + "<br>");
+    	}
+    }
 });
