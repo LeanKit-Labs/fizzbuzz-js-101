@@ -4,5 +4,21 @@
  */
 
 $(document).ready( function() {
-    // All ur codez are belong to here...
+
+    var fizzbuzzcallback = function() {
+        var fizzbuzzhtml = '';
+        for (var i = 1; i <= 100; i++) {
+            result = fizzbuzz(i) ? fizzbuzz(i) : i;
+            fizzbuzzhtml += result + '<br/>';
+        }
+        document.body.innerHTML = fizzbuzzhtml;
+    };
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'src/fizzbuzz.js';
+
+    script.onreadystatechange = fizzbuzzcallback;
+    script.onload = fizzbuzzcallback;
+    document.head.appendChild(script);
 });

@@ -31,8 +31,7 @@ describe('fizzbuzz', function () {
      * when the function argument is evenly divisible by both three *and* five.
      */
     it('should return "fizzbuzz" when the function argument is divisible by both three and five', function () {
-        // You're on your own here. Replace "pending();" with your own code
-        pending();
+        expect(fizzbuzz(15)).toEqual('fizzbuzz');
     });
 
     /**
@@ -40,7 +39,6 @@ describe('fizzbuzz', function () {
      * when the function argument is equal to the number 42.
      */
     it('should return "MeaningOfLife" when the function argument is equal to 42', function () {
-        // You're on your own here. Replace "pending();" with your own code
-        pending();
+        expect(fizzbuzz(42)).toEqual('MeaningOfLife');
     });
 });
